@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+
+/* SITE STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: radial-gradient(40.29% 60.72% at 73.19% 51.33%, rgba(255, 51, 149, 0.13) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(30.77% 52.11% at 15.17% 9.88%, rgba(77, 120, 255, 0.3) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #FFF 0%, #EBE5FF 100%);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
