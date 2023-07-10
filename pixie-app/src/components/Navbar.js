@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon } from '@heroicons/react/24/solid'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -18,16 +18,17 @@ function NavBar() {
             <Link to='/' className='nav-bar-logo text-2xl text-purple-default'><i className='fa-solid fa-cloud'></i></Link>
             <span className='text-2xl font-semibold tracking-tight'>pixie</span>
           </div>
-          <div className='nav-menu-items flex items-center gap-12 font-semibold '>
+          <div className='nav-menu-items flex'>
+            <div className='hidden lg:flex items-center gap-12 font-semibold'>
             <a href='/' className='text-md hover:text-purple-dark transition ease-in-out delay-25'>Import Media</a>
             <a href='/' className='text-md hover:text-purple-dark transition ease-in-out delay-25'>About</a>
             <a href='/' className='text-md hover:text-purple-dark transition ease-in-out delay-25'>Help</a>
             <a href='/' className='bg-purple-default p-3 rounded-xl text-white hover:bg-purple-dark transition ease-in-out delay-25'>Chrome Extension</a>
-              <Menu as="div" className="relative inline-block text-left">
+            </div>
+            <Menu as="div" className="block lg:hidden mobile-menu relative text-left">
               <div>
-                <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-xl bg-purple-default p-3 text-md font-semibold text-white hover:bg-purple-dark transition ease-in-out delay-25">
-                  Menu
-                  <ChevronDownIcon className="-mr-1 h-5 w-5 text-white" aria-hidden="true" />
+                <Menu.Button>
+                  <Bars3Icon className="h-8 w-8 text-purple-dark" aria-hidden="true" />
                 </Menu.Button>
               </div>
 

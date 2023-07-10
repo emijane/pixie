@@ -24,6 +24,9 @@ module.exports = {
       yellow: colors.yellow,
     },
     screens: {
+      'xs': '300px',
+      // => @media (min-width: 300px) { ... }
+
       'sm': '576px',
       // => @media (min-width: 576px) { ... }
     
@@ -33,11 +36,11 @@ module.exports = {
       'lg': '992px',
       // => @media (min-width: 992px) { ... }
     
-      'xl': '1300px',
-      // => @media (min-width: 1200px) { ... }
+      'xl': '1400px',
+      // => @media (min-width: 1400px) { ... }
 
       'xxl': '1500px',
-      // => @media (min-width: 1200px) { ... }
+      // => @media (min-width: 1500px) { ... }
     },
     extend: {},
   },
